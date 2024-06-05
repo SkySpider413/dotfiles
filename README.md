@@ -22,9 +22,16 @@ ln -s ~/dotfiles/i3statusconfig ~/.config/i3status/config
 ls -la /etc/nixos/
 ls -la ~/.config/i3/
 ls -la ~/.config/i3status/
+```
+
+rebuild and get stuff
+```console
 sudo nixos-rebuild switch
 sudo reboot
+```
 
+add fonts
+```console
 mkdir -p ~/.local/share/fonts
 mv <path_of_extracted_fonts> ~/.local/share/fonts/
 fc-cache -vf ~/.local/share/fonts/
